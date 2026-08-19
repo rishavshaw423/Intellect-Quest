@@ -1,0 +1,136 @@
+.question-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 0;
+}
+
+.question-card {
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 20px;
+  background: var(--card-bg);
+  box-shadow: 0 1px 3px rgba(20, 22, 58, 0.04);
+  transition: box-shadow 0.2s;
+}
+
+.question-card:hover {
+  box-shadow: 0 4px 14px rgba(20, 22, 58, 0.08);
+}
+
+.question-text {
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+.tags-container {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.tag-marks {
+  background: #e0eaff;
+  color: var(--blue-accent);
+}
+
+.tag-bloom {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.tag-co {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.card-actions button {
+  padding: 7px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-edit {
+  background: var(--bg-light);
+  color: var(--text-dark);
+}
+
+.btn-edit:hover {
+  background: var(--border-light);
+}
+
+.btn-approve {
+  background: var(--green-accent);
+  color: white;
+}
+
+.btn-approve:hover {
+  background: #16a34a;
+}
+
+.btn-save {
+  background: var(--purple-primary);
+  color: white;
+}
+
+.btn-save:hover {
+  background: #5a3ce0;
+}
+
+.btn-cancel {
+  background: var(--bg-light);
+  color: var(--text-dark);
+}
+
+.question-card.approved {
+  border: 2px solid var(--green-accent);
+  background: #f0fdf4;
+}
+
+.question-card.editing {
+  border: 2px solid var(--purple-primary);
+}
+
+.edit-text {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  font-family: 'Poppins', sans-serif;
+  resize: vertical;
+}
+
+.edit-tags {
+  gap: 8px;
+}
+
+.edit-input {
+  padding: 7px 10px;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  font-size: 0.82rem;
+  width: 90px;
+  font-family: 'Poppins', sans-serif;
+}

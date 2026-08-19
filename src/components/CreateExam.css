@@ -1,0 +1,129 @@
+.create-exam-wrapper {
+  padding: 8px;
+}
+
+.step-panel {
+  background: var(--card-bg);
+  border-radius: 12px;
+  border: 1px solid var(--border-light);
+  padding: 32px;
+  text-align: center;
+}
+
+.loading-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 60px 32px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--border-light);
+  border-top: 4px solid var(--purple-primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loading-panel p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.analyze-panel h3 {
+  margin-bottom: 20px;
+  color: var(--text-dark);
+}
+
+.quality-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.score-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(var(--green-accent) 92%, var(--border-light) 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  position: relative;
+}
+
+.score-circle::before {
+  content: '';
+  position: absolute;
+  width: 76px;
+  height: 76px;
+  background: var(--card-bg);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.score-circle {
+  z-index: 1;
+}
+
+.quality-score p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.analysis-checklist {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  margin: 0 auto 24px;
+  text-align: left;
+}
+
+.analysis-checklist li {
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+
+.primary-btn {
+  padding: 12px 24px;
+  background: var(--purple-primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.primary-btn:hover {
+  background: #5a3ce0;
+}
+
+.publish-btn {
+  display: block;
+  margin: 20px auto 0;
+}
+
+.publish-panel h3 {
+  color: var(--green-accent);
+  margin-bottom: 8px;
+}
+
+.publish-panel p {
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}

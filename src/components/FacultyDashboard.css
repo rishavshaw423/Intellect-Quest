@@ -1,0 +1,61 @@
+.dashboard-wrapper {
+  padding: 8px;
+}
+
+.dashboard-header {
+  margin-bottom: 28px;
+}
+
+.dashboard-header h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.dashboard-header p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.dashboard-card {
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 22px;
+  background: var(--card-bg);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(20, 22, 58, 0.04);
+}
+
+.dashboard-card.active {
+  border-color: var(--purple-primary);
+}
+
+.dashboard-card.active:hover {
+  box-shadow: 0 8px 20px rgba(108, 79, 242, 0.15);
+  transform: translateY(-2px);
+}
+
+.dashboard-card.disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.dashboard-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text-dark);
+}
+
+.dashboard-card p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}

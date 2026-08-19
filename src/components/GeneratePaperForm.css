@@ -1,0 +1,92 @@
+.generate-form {
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 28px;
+  margin-bottom: 24px;
+  background: var(--card-bg);
+  box-shadow: 0 1px 3px rgba(20, 22, 58, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.generate-form h2 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.generate-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  gap: 6px;
+}
+
+.generate-form input {
+  padding: 10px 12px;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-light);
+  color: var(--text-dark);
+}
+
+.generate-form input:focus {
+  outline: none;
+  border-color: var(--purple-primary);
+  background: var(--card-bg);
+}
+
+.difficulty-row {
+  display: flex;
+  gap: 12px;
+}
+
+.difficulty-row label {
+  flex: 1;
+}
+
+.generate-form button {
+  margin-top: 8px;
+  padding: 12px;
+  background: var(--purple-primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.generate-form button:hover {
+  background: #5a3ce0;
+}
+
+.generate-form button:disabled {
+  background: #c4bff7;
+  cursor: not-allowed;
+}
+
+.status-msg {
+  margin-top: 4px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.status-msg.success {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status-msg.error {
+  background: #fee2e2;
+  color: #b91c1c;
+}

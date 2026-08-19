@@ -1,0 +1,30 @@
+:root {
+  --navy-dark: #14163a;
+  --navy-darker: #0d0e26;
+  --purple-primary: #6c4ff2;
+  --purple-light: #8b6ff5;
+  --blue-accent: #3b7de8;
+  --green-accent: #22c55e;
+  --orange-accent: #f59e0b;
+  --bg-light: #f5f6fb;
+  --card-bg: #ffffff;
+  --text-dark: #1a1b2e;
+  --text-muted: #7d7f96;
+  --border-light: #e6e7f0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-light);
+  color: var(--text-dark);
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+}
